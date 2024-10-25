@@ -5,7 +5,7 @@
 3. Define the objectives of the different levels of testing
 4. Explain best practices for software testing
 
-### Testing Background
+## Testing Background
 1. History and Background
     1. With the increasing reliability of computer hardware and the growing complexity of software, the root cause of system failures has shifted towards software-related issues.
     2. Even with the evolution of technology and development practices, software development is still plagued by similar issues.
@@ -53,7 +53,7 @@
     7. Automation's Role: Automation is growing in importance, not just for functional testing, but across continuous integration and delivery.
     8. Hiring Needs: Testers need a proactive mindset, problem-solving skills, creativity, and strong communication, along with technical expertise.
 
-### Testing Throughout Software Life Cycle
+## Testing Throughout Software Life Cycle
 1. Waterfall and Incremental Models:
     1. Testing typically occurs at the end of development, but testers are involved early in refining requirements and preparing test cases.
     2. A key issue with waterfall is the "throwing over the wall" mentality: The next phase can only begin after the previous one is completed.
@@ -87,7 +87,7 @@
     3. Structural (White Box) Testing: Ensures logic and code execution quality, mostly at the unit level.
     4. Regression Testing: Ensures changes haven’t broken existing functionality, applicable at all levels.
 
-### Testing Best Practices and Standards
+## Testing Best Practices and Standards
 1. Testing Principles
     1. Testing only shows the presence of defects: Testing doesn’t prove the absence of defects, only their presence.
     2. Exhaustive testing is impossible: It's unrealistic to test all inputs, especially with complex systems.
