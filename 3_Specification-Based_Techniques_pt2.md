@@ -1,5 +1,5 @@
 # Unit 3: Specification-Based Techniques - Part 2
-### Learning Objectives+
+### Learning Objectives
 1. Apply combinatorial test coverage to assess test quality
 2. Apply design of experiments to develop tests
 3. Understand mutation testing
