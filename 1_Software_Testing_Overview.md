@@ -1,9 +1,13 @@
 # Unit 1: Software Testing Overview
+
+
 ### Learning Objectives
 1. Define common testing terminology
 2. Describe how testing is integrated into software development phases
 3. Define the objectives of the different levels of testing
 4. Explain best practices for software testing
+
+
 
 ## Testing Background
 1. History and Background
@@ -53,12 +57,14 @@
     7. Automation's Role: Automation is growing in importance, not just for functional testing, but across continuous integration and delivery.
     8. Hiring Needs: Testers need a proactive mindset, problem-solving skills, creativity, and strong communication, along with technical expertise.
 
+
+
 ## Testing Throughout Software Life Cycle
 1. Waterfall and Incremental Models:
     1. Testing typically occurs at the end of development, but testers are involved early in refining requirements and preparing test cases.
     2. A key issue with waterfall is the "throwing over the wall" mentality: The next phase can only begin after the previous one is completed.
 2. Agile Methodologies:
-    1. Agile involves continuous testing throughout the process, with testers working closely with developers and customers  in iterative sprints.
+    1. Agile involves continuous testing throughout the process, with testers working closely with developers and customers in iterative sprints.
     2. Test-Driven Development (TDD) is a key approach in Agile.
 3. Test-Driven Development (TDD)
     1. In TDD, developers write minimal tests to define desired behaviors before writing the code.
@@ -74,7 +80,7 @@
         1. estimation
         2. planning
         3. tracking
-        4.  configuration management
+        4. configuration management
 5. Levels of Testing
     1. Unit/Component Testing: Done by developers at their workstations, often automated, to validate and verify individual components.
     2. Integration Testing: Combines units and components, focusing on their interaction and higher-level functions.
@@ -87,10 +93,12 @@
     3. Structural (White Box) Testing: Ensures logic and code execution quality, mostly at the unit level.
     4. Regression Testing: Ensures changes haven’t broken existing functionality, applicable at all levels.
 
+
+
 ## Testing Best Practices and Standards
 1. Testing Principles
-    1. Testing only shows the presence of defects: Testing doesn’t prove the absence of defects, only their presence.
-    2. Exhaustive testing is impossible: It's unrealistic to test all inputs, especially with complex systems.
+    1. Testing only shows the presence of defects: Testing doesn't prove the absence缺少 of defects, only their presence.
+    2. Exhaustive詳盡的 testing is impossible: It's unrealistic to test all inputs, especially with complex systems.
     3. Start testing early: Early involvement, such as in test-driven development (TDD), is crucial.
     4. Defects cluster: Defects tend to appear in specific areas, often due to complexity or human error.
     5. Testing is context-dependent: Tests depend on the system's state and external factors, especially for mobile apps.
@@ -99,7 +107,7 @@
 2. Testing Attitudes:
     1. Independence: Testing should ideally be done independently to avoid bias, though it's difficult at the unit level.
     2. Customer Perspective: Testers should adopt the customer’s viewpoint to ensure software meets real-world needs.
-    3. Test for intended and unintended functionality: Verify the system works as expected and deliberately try to "break" it (e.g., test edge cases).
+    3. Test for intended and unintended functionality: Verify the system works as expected and deliberately故意地 try to "break" it (e.g., test edge cases).
     4. Professionalism in Testing: Testing requires specialized skills, education, and knowledge of best practices.
 
 3. Classic Testing Mistakes:

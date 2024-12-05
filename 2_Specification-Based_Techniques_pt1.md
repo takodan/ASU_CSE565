@@ -1,4 +1,6 @@
 # Unit 2: Specification-Based Techniques - Part 1
+
+
 ### Learning Objectives
 1. Contrast requirement-based versus scenario-based testing
 2. Apply the equivalence partitioning testing technique
@@ -6,6 +8,9 @@
 4. Test asynchronous events
 5. Apply state-based testing technique
 6. Describe model-based testing strategies
+
+
+
 
 ## Input Sampling Techniques
 1. Black-box Testing
@@ -37,6 +42,7 @@
         2. Identify how each actor uses the system (use-case)
         3. Detail each use-case
 
+
 ### The review of the paper: An introduction to Scenario Testing
 1. Key characteristics of a good scenario test
     1. Story-driven: Focuses on a customer's goals and behaviors.
@@ -67,7 +73,7 @@
 
 ### Equivalence Partitioning Testing
 1. Definition
-    1. A technique to divide the input domain of a program into a finite number of partitions (both valid and invalid).
+    1. A technique to divide the input domain of a program into a finite有限 number of partitions (both valid and invalid).
     2. Allows you to test a representative value from each partition, assuming the program will behave the same for all values in that partition.
 2. Steps in Equivalence Partitioning
     1. Identify equivalence partitions for each input (valid and invalid).
@@ -88,9 +94,10 @@
     1. This method assumes inputs are independent of each other. 
     2. It does not handle combinations of dependent inputs.
 
+
 ### Boundary Value Testing
 1. Definition
-    1. selecting test cases on, above, and below the edges of input and output equivalence partitions.
+    1. Selecting test cases on, above, and below the edges of input and output equivalence partitions.
 2. Example: Password Length
     1. the valid password length is 6 to 10
     2. Equivalence Partitioning: Test values within and outside this range (<6, 6-10, >10).
@@ -100,6 +107,7 @@
 3. It’s also important to test output boundaries
     1. Exact boundary testing can be difficult (e.g., tweaking inputs to hit exactly output)
     2. In some cases, inspecting the code may be a more effective way to confirm boundary behavior.
+
 
 ### The review of the paper: Equivalence Class Partitioning and Boundary Value Analysis - A Review
 1. The main limitation is that black-box testing does not provide code coverage (white-box do cover).
@@ -114,8 +122,9 @@
         1. Robust Testing: Tests individual boundary values separately.
         2. Worst-Case Testing: Tests combinations of boundary values across multiple variables.
 
+
 ### Cause Effect Analysis
-1. Example: Customer and Order Program
+1. Example: Customers and an Order Program
     1. Equivalence Partitioning alone is insufficient because customer type and order amount are dependent on each other.
     2. The combinations of customer type and order amount must be tested together.
 2. Cause Effect Testing
@@ -133,8 +142,9 @@
     2. The goal is to find a balance between complete coverage and reducing test cases by making reasonable assumptions about error handling.
     3. For example, assuming that the validation of customer type and order amount are independent.
 
+
 ### Testing Asynchronous Events
-1. External events that can occur at any point during the system’s operation.
+1. External events that can occur at any point during the system's operation.
 2. e.g., power failures, messages, errors.
 3. The timeline helps visualize when events occur, and testers can use it to identify test cases for each event point.
 4. Example: ATM System
@@ -145,6 +155,7 @@
     5. If a power failure happens before the ATM dispenses cash, the system should return the customer’s card and not debit the account.
 5. Timelines also help with validation of the system.
 
+
 ### State-Based Testing
 1. State machines represent different system states and events that cause transitions between these states.
 2. States and events are represented in either tabular or UML diagrams.
@@ -154,34 +165,36 @@
     3. trying a pin three times are different states
 4. Testing State Machines
     1. Ensure that every state and event combination is accounted for, especially when things get complicated.
-        1. contradictions(矛盾)
+        1. contradictions矛盾
         2. unreachable states
         3. dead states (states with no transitions)
-    2. Ensure that testing covers each state and transition.
+    2. Ensure that testing covers each state and transition (a minimal state machine cover).
 5. Testing steps
     1. Develop a state testing tree
         1. The tree starts at the root (initial state).
         2. Expanding by testing each transition to reach new states.
     2. Identify test sequences
-        1. Test sequences are paths through the tree
-        2. Ensuring all states and transitions are covered
+        1. Test sequences are paths through the tree.
+        2. Ensuring all states and transitions are covered.
     3. Develop Tests
         1. Test every state and each transition from those states (test sequences).
 
+
 ### Model-Based Testing
 1. Model-Based Software Development
-    1. UML and various state-based models are commonly used to create models
-    2. The goal is generating code directly from the model
+    1. UML (Unified Modeling Language) and various state-based models are commonly used to create models.
+    2. The goal is generating code directly from the model.
 2. Model-Based Testing leverages the same model to automatically generate and execute tests
 3. Steps
-    1. Create a system model: most challenging and expertise-driven step
-    2. Select test generation criteria: Define the type of tests needed based on the model (e.g., EP or BV)
+    1. Create a system model: most challenging and expertise-driven step.
+    2. Select test generation criteria: define the type of tests needed based on the model (e.g., EP or BV).
     3. Generate tests
     4. Execute tests
 4. Advantages
-    1. Precision and Reduced Ambiguity(歧義)
-    2. Automated Test Generation
-    3. Ease of Handling Changes
+    1. Precision and reduced ambiguity歧義
+    2. Automated test generation
+    3. Ease of handling changes
+
 
 ### The review of the paper: Model-Based Testing
 1. Definition
